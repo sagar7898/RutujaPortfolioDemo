@@ -15,3 +15,7 @@
     align-items: center;
     justify-content: center;
 }
+
+.card-custom h5 {
+    color: #e0e7ff; /* soft bluish white */
+}
