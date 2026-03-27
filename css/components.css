@@ -1,0 +1,506 @@
+﻿.btn-gradient {
+    background: var(--primary-gradient);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+    .btn-gradient:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 20px rgba(255, 78, 205, 0.4);
+    }
+
+/* LINKEDIN BUTTON */
+.btn-linkedin {
+    border: 1px solid #0A66C2;
+    color: #0A66C2;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+    .btn-linkedin:hover {
+        background: #0A66C2;
+        color: white;
+        box-shadow: 0 0 15px rgba(10, 102, 194, 0.4);
+    }
+
+
+/* WHATSAPP BUTTON (refined) */
+.btn-whatsapp {
+    border: 1px solid #25D366;
+    color: #25D366;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+    .btn-whatsapp:hover {
+        background: #25D366;
+        color: white;
+        box-shadow: 0 0 15px rgba(37, 211, 102, 0.4);
+    }
+
+@media (max-width: 760px) {
+
+    .mt-4 a {
+        flex: 1 1 30%;
+        text-align: center;
+        margin: 0 !important;
+        /* 🔥 Make buttons smaller */
+        padding: 6px 10px;
+        font-size: 12px;
+        border-radius: 8px;
+    }
+
+        /* Resume button full width */
+        .mt-4 a:first-child {
+            flex: 1 1 100%;
+            font-size: 13px;
+            padding: 8px;
+        }
+
+    .about-title{
+        text-align:center;
+    }
+}
+
+.card-custom {
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+    .card-custom:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(123, 97, 255, 0.3);
+    }
+
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+    .section-title span {
+        background: var(--primary-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+
+
+
+/* NAVBAR BASE */
+.custom-navbar {
+    background: transparent;
+    padding: 15px 0;
+    transition: 0.3s ease;
+}
+
+/* NAV LINKS */
+.navbar .nav-link {
+    color: white;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+    .navbar .nav-link:hover {
+        color: #ff4ecd;
+    }
+
+/* SCROLL EFFECT */
+.navbar.scrolled {
+    background: rgba(15, 15, 26, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+
+
+/* FOOTER BASE */
+.footer {
+    padding: 30px 0;
+    background: linear-gradient(180deg, #0f0f1a, #141427);
+    border-top: 1px solid rgba(255,255,255,0.05);
+    position: relative;
+}
+
+    /* GLOW EFFECT 🔥 */
+    .footer::before {
+        content: "";
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        background: linear-gradient(135deg, #ff4ecd, #7b61ff);
+        filter: blur(120px);
+        bottom: 0px;
+        right: 0px;
+        opacity: 0.3;
+    }
+
+/* LINKS */
+.footer-links a,
+.footer-social a {
+    margin: 0 10px;
+    color: #bbb;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+    /* HOVER EFFECT 🔥 */
+    .footer-links a:hover,
+    .footer-social a:hover {
+        color: #fff;
+    }
+
+    /* UNDERLINE ANIMATION */
+    .footer-links a::after,
+    .footer-social a::after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        background: linear-gradient(135deg, #ff4ecd, #7b61ff);
+        bottom: -3px;
+        left: 0;
+        transition: 0.3s;
+    }
+
+    .footer-links a:hover::after,
+    .footer-social a:hover::after {
+        width: 100%;
+    }
+
+
+/*=========== ARCHITECTURE DIAGRAM (THEMED) ===========*/
+
+/* NODE BOX */
+.arch-node {
+    background: var(--card-bg);
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: 1px solid var(--border-light);
+    text-align: center;
+}
+
+    /* HOVER EFFECT 🔥 */
+    .arch-node:hover {
+        transform: translateY(-4px);
+        background: var(--primary-gradient);
+        color: white;
+        box-shadow: 0 10px 25px rgba(255, 78, 205, 0.3);
+    }
+
+/* ARROW */
+.arch-arrow {
+    font-size: 22px;
+    text-align: center;
+    margin: 8px 0;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* EXPLANATION TEXT */
+#archExplanation {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* MOBILE INFO (if used later) */
+.arch-mobile-info {
+    display: none;
+    background: var(--card-bg);
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: var(--text-muted);
+    border: 1px solid var(--border-light);
+}
+
+
+/* TECH CARD */
+.tech-card {
+    transition: 0.3s ease;
+}
+
+    .tech-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(123, 97, 255, 0.3);
+    }
+
+/* TECH TAGS */
+.tech-list span {
+    display: inline-block;
+    margin: 6px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+    .tech-list span:hover {
+        background: var(--primary-gradient);
+        color: white;
+    }
+
+
+
+    /* ================= ROOT CHAT WIDGET ================= */
+
+.ai-widget {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 9999;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ================= CHAT BUTTON ================= */
+
+.ai-open-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    background: var(--primary-gradient);
+    box-shadow: 0 0 20px #3b82f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: aiPulse 2s infinite;
+}
+
+@keyframes aiPulse {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.1)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+/* ================= CHAT WINDOW ================= */
+
+.ai-chat-window {
+    width: 340px;
+    height: 470px;
+    background: rgba(255, 255, 255, 0.05); /* transparent glass */
+    backdrop-filter: blur(15px); /* main glass effect 🔥 */
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 14px;
+    overflow: hidden;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 0 40px rgba(0,0,0,0.6);
+    margin-bottom: 60px;
+    border: 1px solid rgba(255,255,255,0.1); /* glass border */
+}
+
+
+/* ================= HEADER ================= */
+
+.ai-chat-header {
+    background: var(--primary-gradient);
+    color: white;
+    padding: 12px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* ================= MESSAGE AREA ================= */
+
+.ai-chat-messages {
+    flex: 1;
+    padding: 14px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+/* ================= SUGGESTED QUESTIONS ================= */
+
+.ai-quick-questions {
+    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+    .ai-quick-questions button {
+        background: rgba(255,255,255,0.08);
+        border: none;
+        color: var(--text-light);
+        padding: 6px 10px;
+        font-size: 11px;
+        border-radius: 14px;
+        cursor: pointer;
+    }
+
+        .ai-quick-questions button:hover {
+            background: var(--primary-gradient);
+        }
+
+/* ================= INPUT AREA ================= */
+
+.ai-input-zone {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 8px;
+}
+
+.ai-input-box {
+    flex: 1;
+    padding: 10px 14px;
+    border-radius: 20px;
+    border: none;
+    background: var(--card-bg);
+    color: var(--text-light);
+}
+
+.ai-send-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: var(--primary-gradient);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.ai-input-box:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #ff4ecd;
+}
+
+/* ================= SCROLLBAR ================= */
+
+.ai-chat-messages::-webkit-scrollbar {
+    width: 4px;
+}
+
+.ai-chat-messages::-webkit-scrollbar-thumb {
+    background: var(--primary-gradient);
+    border-radius: 10px;
+}
+
+.ai-thinking span {
+    animation: blink 1s infinite;
+}
+
+    .ai-thinking span:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+
+    .ai-thinking span:nth-child(3) {
+        animation-delay: 0.4s;
+    }
+
+@keyframes blink {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+
+.ai-message {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+    .ai-message.user {
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+    }
+
+    .ai-message.bot {
+        justify-content: flex-start;
+    }
+
+.ai-avatar {
+    flex-shrink: 0;
+}
+
+    .ai-avatar img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+    }
+
+.ai-bubble {
+    max-width: 75%;
+    padding: 10px 14px;
+    border-radius: 16px;
+    font-size: 13px;
+}
+
+.ai-message.bot .ai-bubble {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    color: var(--text-light);
+}
+
+.ai-message.user .ai-bubble {
+    background: var(--primary-gradient);
+    color: white;
+}
+
+@media (max-width: 480px) {
+
+    .ai-widget {
+        right: 0;
+        left: 0;
+        bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .ai-chat-window {
+        width: calc(100% - 30px);
+        margin-bottom: 70px;
+        height: 65vh;
+    }
+}
+
+
+

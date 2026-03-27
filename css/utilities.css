@@ -1,0 +1,17 @@
+﻿.mt-6 {
+    margin-top: 10rem;
+}
+
+.mb-6 {
+    margin-bottom: 6rem;
+}
+    
+.text-muted-custom {
+    color: var(--text-muted);
+}
+
+.center-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
